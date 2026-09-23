@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Riviera Rush — Run your beach club on the Italian coast</title>
+<meta name="description" content="Riviera Rush is an arcade idle game about running Italian beach clubs. Serve sunbeds, umbrellas and granitas, survive the midday Rush, and grow a chain of lidos from Rimini to Tropea.">
+<meta name="author" content="Zipangulu">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://zipanguludev.github.io/rivierarush-landing/">
+<meta name="theme-color" content="#2FB4D8">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Zipangulu">
+<meta property="og:title" content="Riviera Rush — Run your beach club on the Italian coast">
+<meta property="og:description" content="Serve sunbeds, umbrellas and granitas, survive the midday Rush, and grow a chain of lidos from Rimini to Tropea.">
+<meta property="og:url" content="https://zipanguludev.github.io/rivierarush-landing/">
+<meta property="og:image" content="https://zipanguludev.github.io/rivierarush-landing/assets/icon-512.png">
+<meta name="twitter:card" content="summary">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --sea: #2FB4D8; --sea-deep: #1E8FB0; --gold: #FFC93C; --gold-light: #FFE08A;
+    --coral: #E8453C; --ink: #23304D; --cream: #FFF8E7; --muted: #5C6B88;
+    --card: #ffffff; --page: var(--cream); --text: var(--ink);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --page: #101A2B; --card: #182742; --text: #EAF2FB; --muted: #9BB0CE;
+    }
+  }
+  :root[data-theme="dark"] { --page: #101A2B; --card: #182742; --text: #EAF2FB; --muted: #9BB0CE; }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--page); color: var(--text);
+    font-family: Fredoka, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+
+  header {
+    background: linear-gradient(180deg, var(--sea) 0%, var(--sea-deep) 100%);
+    color: #fff; text-align: center; padding: 56px 0 64px;
+  }
+  header img { width: 132px; height: 132px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+  h1 { font-size: clamp(2.1rem, 8vw, 3.2rem); font-weight: 700; margin: 20px 0 4px; letter-spacing: .5px; }
+  .tagline { font-size: 1.15rem; font-weight: 500; opacity: .95; margin: 0 auto; max-width: 30ch; }
+  .pill {
+    display: inline-block; margin-top: 22px; padding: 9px 20px; border-radius: 999px;
+    background: var(--gold); color: var(--ink); font-weight: 600; font-size: .95rem;
+  }
+
+  main { padding: 44px 0 8px; }
+  h2 { font-size: 1.45rem; font-weight: 600; margin: 40px 0 10px; }
+  p { margin: 0 0 14px; }
+  .lead { font-size: 1.1rem; }
+
+  .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 18px; }
+  .card { background: var(--card); border-radius: 18px; padding: 20px 22px; box-shadow: 0 2px 10px rgba(35,48,77,.08); }
+  .card h3 { margin: 0 0 6px; font-size: 1.05rem; font-weight: 600; color: var(--sea-deep); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .card h3 { color: var(--gold-light); } }
+  :root[data-theme="dark"] .card h3 { color: var(--gold-light); }
+  .card p { margin: 0; color: var(--muted); font-size: .96rem; }
+
+  .note { background: var(--card); border-left: 5px solid var(--gold); border-radius: 12px; padding: 18px 22px; }
+  a { color: var(--sea-deep); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a { color: var(--gold-light); } }
+  :root[data-theme="dark"] a { color: var(--gold-light); }
+
+  footer { margin-top: 48px; padding: 26px 0 40px; border-top: 1px solid rgba(92,107,136,.25); color: var(--muted); font-size: .92rem; }
+  footer a { margin-right: 16px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <img src="assets/icon-512.png" alt="Riviera Rush app icon: a lifeguard on the beach">
+    <h1>Riviera Rush</h1>
+    <p class="tagline">Run your beach club on the Italian coast.</p>
+    <span class="pill">In testing — coming to Google Play and the App Store</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="lead">Sunbeds to carry, umbrellas to open, granitas to serve and a queue that never ends.
+  Riviera Rush is an arcade idle game about running the beach clubs of Italy: you start with one strip
+  of sand in Rimini and end up with a chain of lidos along the whole coast.</p>
+
+  <h2>What you do</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>One thumb, no waiting</h3>
+      <p>Pick things up, drop them where they belong, collect the coins. Everything happens while you move — no menus in the way.</p>
+    </div>
+    <div class="card">
+      <h3>The Rush</h3>
+      <p>At noon the beach fills up. Keep everyone served while the patience bars drain, and the day closes with three stars.</p>
+    </div>
+    <div class="card">
+      <h3>A chain across Italy</h3>
+      <p>Open lidos in real towns — Rimini, Sanremo, Positano, Tropea, Porto Cervo — each with its own look, food and habits.</p>
+    </div>
+    <div class="card">
+      <h3>It grows while you watch</h3>
+      <p>Every coin you spend changes the sand in front of you: a new row, a kiosk, a helper who runs so you don't have to.</p>
+    </div>
+    <div class="card">
+      <h3>Name your own lido</h3>
+      <p>Each beach club is yours to name, and the guests leave reviews about it — some kinder than others.</p>
+    </div>
+    <div class="card">
+      <h3>Plays offline</h3>
+      <p>No account, no login, nothing to sign up for. Your progress stays on your phone.</p>
+    </div>
+  </div>
+
+  <h2>Want to test it?</h2>
+  <div class="note">
+    <p>Riviera Rush is not on the stores yet: it is going through closed testing on Google Play and TestFlight.
+    If you would like an invite, write to
+    <a href="mailto:zipangulu.dev@gmail.com?subject=Riviera%20Rush%20testing">zipangulu.dev@gmail.com</a>
+    and say whether you are on Android or iPhone.</p>
+  </div>
+
+  <footer>
+    <a href="privacy-policy.html">Privacy policy</a>
+    <a href="privacy-policy.it.html">Privacy (italiano)</a>
+    <a href="https://zipanguludev.github.io/">All Zipangulu apps</a>
+    <a href="mailto:zipangulu.dev@gmail.com">Contact</a>
+    <p style="margin-top:14px">© 2026 Zipangulu</p>
+  </footer>
+</main>
+
+</body>
+</html>
