@@ -31,12 +31,18 @@ e dentro l'app: non si rinominano e non si spostano più.** Se un giorno il gioc
 avrà un dominio suo, si punta il dominio a questo repository e gli URL vecchi
 continuano a funzionare.
 
-**L'informativa dice il vero su *questa* versione**, che non raccoglie niente:
-nessuna pubblicità, nessuna statistica, nessuna segnalazione degli errori,
-nessuna richiesta di rete. Al blocco B del piano di rilascio entrano AdMob,
-Firebase Analytics e Crashlytics: **l'informativa va riscritta e ripubblicata
-prima che quella build raggiunga i giocatori**, non dopo. Nel repo del gioco,
-`docs/piano-rilascio.md` lo segna come G3.
+**L’informativa è un documento sul trattamento dei dati, non una presentazione del
+gioco.** Dal 2026-09-23 è scritta sul modello dell’art. 13 del GDPR: titolare, dati
+e finalità, base giuridica, destinatari, conservazione, diritti. Descrive AdMob e il
+consenso di Google, e dice come revocarlo (menu del gioco, «Impostazioni privacy»).
+Di proposito **non** entra nei dettagli interni (frequenza degli annunci, premi,
+funzionamento senza rete): non servono allo scopo e darebbero indicazioni per
+aggirare la pubblicità. Dice invece, perché è vero, che senza consenso possono
+comunque essere mostrati annunci con trattamento limitato dei dati.
+
+Quando arrivano statistiche, segnalazione degli errori o acquisti (blocchi C e D del
+piano di rilascio, nel repo del gioco) **l’informativa va aggiornata e ripubblicata
+prima che quella build raggiunga i giocatori**, non dopo.
 
 **`app-ads.txt` non sta qui.** È in comune per tutte le app, alla radice del
 repository della vetrina (`zipanguludev.github.io/app-ads.txt`, editore
