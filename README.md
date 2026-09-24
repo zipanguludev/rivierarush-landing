@@ -35,6 +35,11 @@ continuano a funzionare.
 gioco.** Dal 2026-09-23 è scritta sul modello dell’art. 13 del GDPR: titolare, dati
 e finalità, base giuridica, destinatari, conservazione, diritti. Descrive AdMob e il
 consenso di Google, e dice come revocarlo (menu del gioco, «Impostazioni privacy»).
+Dal 2026-09-24 descrive anche la **diagnostica del motore Unity** (punto 3.4: crash,
+blocchi e prestazioni inviati a Unity Technologies, base giuridica il legittimo
+interesse), accesa nel progetto del gioco e dichiarata in *Sicurezza dei dati* di
+Play Console. Se un giorno la si spegne, vanno tolti il punto 3.4 e le righe su
+Unity ai punti 4, 5 e 6, e le due voci «solo Unity» del modulo di Play.
 Di proposito **non** entra nei dettagli interni (frequenza degli annunci, premi,
 funzionamento senza rete): non servono allo scopo e darebbero indicazioni per
 aggirare la pubblicità. Dice invece, perché è vero, che senza consenso possono
