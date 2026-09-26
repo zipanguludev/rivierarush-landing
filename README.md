@@ -45,8 +45,19 @@ funzionamento senza rete): non servono allo scopo e darebbero indicazioni per
 aggirare la pubblicità. Dice invece, perché è vero, che senza consenso possono
 comunque essere mostrati annunci con trattamento limitato dei dati.
 
-Quando arrivano statistiche, segnalazione degli errori o acquisti (blocchi C e D del
-piano di rilascio, nel repo del gioco) **l’informativa va aggiornata e ripubblicata
+Dal 2026-09-26 descrive anche **Firebase** (blocco C del piano di rilascio, nel repo del
+gioco): statistiche di Google Analytics for Firebase (punto 3.5, base giuridica il
+consenso nel SEE, nel Regno Unito e in Svizzera, raccolto con lo stesso modulo di Google:
+nel gioco restano spente finché non ci sono le finalità 1 e 8, e non usano mai
+l'identificativo pubblicitario), segnalazione degli arresti anomali di Crashlytics
+(punto 3.6) e impostazioni a distanza di Remote Config (punto 3.7), entrambe su legittimo
+interesse; Google come responsabile del trattamento (punto 5); conservazione 2 mesi per le
+statistiche e 90 giorni per i rapporti (punto 6). I 2 mesi sono l'impostazione predefinita
+di Analytics: se nella console si passa a 14 mesi, va cambiato il punto 6. Se un giorno si
+toglie un servizio Firebase dal gioco, vanno tolti il suo punto e le righe corrispondenti
+ai punti 4, 5 e 6. Il testo di partenza è `docs/privacy-firebase.md` nel repo del gioco.
+
+Quando arrivano gli acquisti (blocco D) **l’informativa va aggiornata e ripubblicata
 prima che quella build raggiunga i giocatori**, non dopo.
 
 **`app-ads.txt` non sta qui.** È in comune per tutte le app, alla radice del
