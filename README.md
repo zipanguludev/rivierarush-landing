@@ -57,6 +57,10 @@ di Analytics: se nella console si passa a 14 mesi, va cambiato il punto 6. Se un
 toglie un servizio Firebase dal gioco, vanno tolti il suo punto e le righe corrispondenti
 ai punti 4, 5 e 6. Il testo di partenza è `docs/privacy-firebase.md` nel repo del gioco.
 
+Dal 2026-09-30 il contatto del titolare, nelle due lingue e nella pagina del sito, è
+**rivierarush.game@gmail.com**: l'indirizzo creato apposta per il pubblico, lo stesso della
+scheda di Google Play. L'indirizzo dell'account delle console non va scritto su queste pagine.
+
 Quando arrivano gli acquisti (blocco D) **l’informativa va aggiornata e ripubblicata
 prima che quella build raggiunga i giocatori**, non dopo.
 
