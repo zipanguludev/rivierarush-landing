@@ -2,143 +2,353 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Riviera Rush — Official website of the Italian beach club game</title>
-<meta name="description" content="Riviera Rush is an arcade idle game about running Italian beach clubs. Serve sunbeds, umbrellas and granitas, survive the midday Rush, and grow a chain of lidos from Rimini to Tropea.">
+<meta name="description" content="Riviera Rush is a free idle beach club game for Android: serve your guests, beat the Rush and open beach clubs across Italy, from Rimini to Positano.">
 <meta name="author" content="Zipangulu">
-<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="robots" content="index, follow, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://zipanguludev.github.io/rivierarush-landing/">
+<link rel="alternate" hreflang="en" href="https://zipanguludev.github.io/rivierarush-landing/">
+<link rel="alternate" hreflang="it" href="https://zipanguludev.github.io/rivierarush-landing/it/">
+<link rel="alternate" hreflang="x-default" href="https://zipanguludev.github.io/rivierarush-landing/">
 <meta name="theme-color" content="#2FB4D8">
+<meta name="color-scheme" content="light">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Riviera Rush">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Zipangulu">
+<meta property="og:locale:alternate" content="it_IT">
 <meta property="og:title" content="Riviera Rush — Official website of the Italian beach club game">
-<meta property="og:description" content="Serve sunbeds, umbrellas and granitas, survive the midday Rush, and grow a chain of lidos from Rimini to Tropea.">
+<meta property="og:description" content="Run your Italian beach club: serve your guests, beat the Rush and open beaches from Rimini to Positano. Free on Google Play, coming soon to iPhone.">
 <meta property="og:url" content="https://zipanguludev.github.io/rivierarush-landing/">
-<meta property="og:image" content="https://zipanguludev.github.io/rivierarush-landing/assets/icon-512.png?v=2">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://zipanguludev.github.io/rivierarush-landing/assets/og-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Riviera Rush, official website: a busy Italian beach club seen from above, with the game on a phone.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Riviera Rush — Official website of the Italian beach club game">
+<meta name="twitter:description" content="Run your Italian beach club: serve your guests, beat the Rush and open beaches from Rimini to Positano.">
+<meta name="twitter:image" content="https://zipanguludev.github.io/rivierarush-landing/assets/og-en.jpg">
+<meta name="twitter:image:alt" content="Riviera Rush, official website: a busy Italian beach club seen from above.">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/Fredoka-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="assets/video/dayone-en.jpg" as="image">
 
-<style>
-  :root {
-    --sea: #2FB4D8; --sea-deep: #1E8FB0; --gold: #FFC93C; --gold-light: #FFE08A;
-    --coral: #E8453C; --ink: #23304D; --cream: #FFF8E7; --muted: #5C6B88;
-    --card: #ffffff; --page: var(--cream); --text: var(--ink);
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --page: #101A2B; --card: #182742; --text: #EAF2FB; --muted: #9BB0CE;
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://zipanguludev.github.io/#organization",
+      "name": "Zipangulu",
+      "url": "https://zipanguludev.github.io/",
+      "logo": "https://zipanguludev.github.io/assets/apple-touch-icon.png"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://zipanguludev.github.io/rivierarush-landing/#website",
+      "url": "https://zipanguludev.github.io/rivierarush-landing/",
+      "name": "Riviera Rush",
+      "inLanguage": ["en", "it"],
+      "publisher": { "@id": "https://zipanguludev.github.io/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://zipanguludev.github.io/rivierarush-landing/#webpage",
+      "url": "https://zipanguludev.github.io/rivierarush-landing/",
+      "name": "Riviera Rush — Official website of the Italian beach club game",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://zipanguludev.github.io/rivierarush-landing/#website" },
+      "about": { "@id": "https://zipanguludev.github.io/rivierarush-landing/#game" },
+      "primaryImageOfPage": "https://zipanguludev.github.io/rivierarush-landing/assets/og-en.jpg"
+    },
+    {
+      "@type": ["MobileApplication", "VideoGame"],
+      "@id": "https://zipanguludev.github.io/rivierarush-landing/#game",
+      "name": "Riviera Rush",
+      "alternateName": "Riviera Rush: Beach Club Idle",
+      "description": "An idle management game about running Italian beach clubs. Serve sunbeds, drinks and gelato with one thumb, beat the midday Rush, hire staff, renovate every beach up to level 5 and open beach clubs in Rimini, Porto Cervo, Sanremo, Positano and Tropea.",
+      "url": "https://zipanguludev.github.io/rivierarush-landing/",
+      "image": "https://zipanguludev.github.io/rivierarush-landing/assets/icon-1024.png",
+      "screenshot": [
+        "https://zipanguludev.github.io/rivierarush-landing/assets/img/shot-en-01.jpg",
+        "https://zipanguludev.github.io/rivierarush-landing/assets/img/shot-en-02.jpg",
+        "https://zipanguludev.github.io/rivierarush-landing/assets/img/shot-en-05.jpg",
+        "https://zipanguludev.github.io/rivierarush-landing/assets/img/shot-en-07.jpg"
+      ],
+      "applicationCategory": "GameApplication",
+      "applicationSubCategory": "Simulation",
+      "genre": ["Idle", "Simulation", "Casual", "Arcade", "Management"],
+      "gamePlatform": "Android",
+      "operatingSystem": "Android",
+      "playMode": "SinglePlayer",
+      "inLanguage": ["en", "it"],
+      "contentRating": "PEGI 3",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.zipangulu.lidorush",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.zipangulu.lidorush",
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.zipangulu.lidorush"],
+      "trailer": { "@id": "https://zipanguludev.github.io/rivierarush-landing/#trailer" },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" },
+      "author": { "@id": "https://zipanguludev.github.io/#organization" },
+      "publisher": { "@id": "https://zipanguludev.github.io/#organization" }
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://zipanguludev.github.io/rivierarush-landing/#trailer",
+      "name": "Riviera Rush — Trailer",
+      "description": "Thirty seconds of Riviera Rush: run your own Italian beach club, stack it high, hire your staff, beat the Rush and throw beach parties across Italy.",
+      "thumbnailUrl": "https://zipanguludev.github.io/rivierarush-landing/assets/video/trailer-en.jpg",
+      "uploadDate": "2026-10-10",
+      "duration": "PT30S",
+      "contentUrl": "https://zipanguludev.github.io/rivierarush-landing/assets/video/trailer-en.mp4",
+      "embedUrl": "https://www.youtube.com/embed/tt58i4RnX1k",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Is Riviera Rush free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Riviera Rush is free to download and play. It shows ads, and you can watch optional videos for bonuses." } },
+        { "@type": "Question", "name": "Is Riviera Rush on iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Riviera Rush is coming soon to the App Store for iPhone. On Android it is already on Google Play." } },
+        { "@type": "Question", "name": "Do I need an account to play?", "acceptedAnswer": { "@type": "Answer", "text": "No. There is no login and nothing to sign up for: your progress is saved on your phone." } },
+        { "@type": "Question", "name": "Which languages is Riviera Rush in?", "acceptedAnswer": { "@type": "Answer", "text": "English and Italian." } },
+        { "@type": "Question", "name": "Which Italian beaches are in the game?", "acceptedAnswer": { "@type": "Answer", "text": "Rimini, Porto Cervo, Sanremo, Positano and Tropea, each with its own look, food and summer event. More of the coast is already on the map, marked as coming soon." } },
+        { "@type": "Question", "name": "Who makes Riviera Rush?", "acceptedAnswer": { "@type": "Answer", "text": "Zipangulu, a one-person indie studio from Italy: game design, code and release are all done by the same person." } }
+      ]
     }
-  }
-  :root[data-theme="dark"] { --page: #101A2B; --card: #182742; --text: #EAF2FB; --muted: #9BB0CE; }
+  ]
+}
+</script>
 
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--page); color: var(--text);
-    font-family: Fredoka, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6;
-  }
-  .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
-
-  header {
-    background: linear-gradient(180deg, var(--sea) 0%, var(--sea-deep) 100%);
-    color: #fff; text-align: center; padding: 56px 0 64px;
-  }
-  header img { width: 132px; height: 132px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
-  h1 { font-size: clamp(2.1rem, 8vw, 3.2rem); font-weight: 700; margin: 20px 0 4px; letter-spacing: .5px; }
-  .tagline { font-size: 1.15rem; font-weight: 500; opacity: .95; margin: 0 auto; max-width: 30ch; }
-  .pill {
-    display: inline-block; margin-top: 22px; padding: 9px 20px; border-radius: 999px;
-    background: var(--gold); color: var(--ink); font-weight: 600; font-size: .95rem;
-  }
-
-  main { padding: 44px 0 8px; }
-  h2 { font-size: 1.45rem; font-weight: 600; margin: 40px 0 10px; }
-  p { margin: 0 0 14px; }
-  .lead { font-size: 1.1rem; }
-
-  .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 18px; }
-  .card { background: var(--card); border-radius: 18px; padding: 20px 22px; box-shadow: 0 2px 10px rgba(35,48,77,.08); }
-  .card h3 { margin: 0 0 6px; font-size: 1.05rem; font-weight: 600; color: var(--sea-deep); }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .card h3 { color: var(--gold-light); } }
-  :root[data-theme="dark"] .card h3 { color: var(--gold-light); }
-  .card p { margin: 0; color: var(--muted); font-size: .96rem; }
-
-  .note { background: var(--card); border-left: 5px solid var(--gold); border-radius: 12px; padding: 18px 22px; }
-  a { color: var(--sea-deep); }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a { color: var(--gold-light); } }
-  :root[data-theme="dark"] a { color: var(--gold-light); }
-
-  footer { margin-top: 48px; padding: 26px 0 40px; border-top: 1px solid rgba(92,107,136,.25); color: var(--muted); font-size: .92rem; }
-  footer a { margin-right: 16px; }
-</style>
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
-<header>
-  <div class="wrap">
-    <img src="assets/icon-512.png" alt="Riviera Rush app icon: a lifeguard on the beach">
-    <h1>Riviera Rush</h1>
-    <p class="tagline">Run your beach club on the Italian coast.</p>
-    <span class="pill">In testing — coming to Google Play and the App Store</span>
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Riviera Rush, back to the top"><img src="assets/favicon-64.png" alt="" width="38" height="38"><span>Riviera Rush</span></a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#gameplay">Gameplay</a>
+      <a href="#events">Events</a>
+      <a href="#beaches">Beaches</a>
+      <a href="#trailer">Trailer</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="lang" href="it/" hreflang="it" lang="it" aria-label="Leggi il sito in italiano">IT</a>
+    <a class="btn btn-gold" href="https://play.google.com/store/apps/details?id=com.zipangulu.lidorush" rel="noopener">Play free</a>
   </div>
 </header>
 
-<main class="wrap">
-  <p class="lead">Sunbeds to carry, umbrellas to open, granitas to serve and a queue that never ends.
-  Riviera Rush is an arcade idle game about running the beach clubs of Italy: you start with one strip
-  of sand in Rimini and end up with a chain of lidos along the whole coast.</p>
+<main>
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="pill"><span class="dot"></span> Out now on Google Play</span>
+        <h1><span class="wordmark"><span class="a">Riviera</span> <span class="b">Rush</span></span><span class="h1-sub">Run your Italian beach club</span></h1>
+        <p class="hero-lead">Rent out sunbeds and umbrellas, carry drinks and gelato to your guests, survive the midday Rush and turn a strip of sand into a chain of beach clubs across Italy. All with one thumb.</p>
+        <div class="cta-row">
+          <a class="badge-play" href="https://play.google.com/store/apps/details?id=com.zipangulu.lidorush" rel="noopener" aria-label="Get Riviera Rush on Google Play"><img src="assets/google-play-badge.svg" alt="Get it on Google Play" width="190" height="56"></a>
+          <span class="soon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="18" r="1.3" fill="currentColor"/></svg><span><small>Coming soon</small>App Store · iPhone</span></span>
+        </div>
+        <ul class="chips" aria-label="At a glance">
+          <li>Free to play</li><li>No account</li><li>English &amp; Italian</li><li>PEGI 3</li>
+        </ul>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="float float-coins"><span class="coin"></span>+1 240</div>
+        <div class="phone"><video id="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/video/dayone-en.jpg" width="540" height="960"><source src="assets/video/dayone-en.mp4" type="video/mp4"></video></div>
+        <div class="float float-rush">RUSH!</div>
+        <div class="float float-review"><span class="stars">★★★★★</span>“Nobody waited a second too long. Are you even human?”</div>
+      </div>
+    </div>
+    <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 46c120-26 240-36 360-30s240 34 360 36 240-24 360-34 240 4 360 22v50H0Z"/></svg>
+  </section>
 
-  <h2>What you do</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>One thumb, no waiting</h3>
-      <p>Pick things up, drop them where they belong, collect the coins. Everything happens while you move — no menus in the way.</p>
+  <section class="stats" aria-label="Riviera Rush in numbers">
+    <div class="wrap">
+      <p class="stats-intro reveal">From day one to day nine, a quiet strip of sand becomes the busiest beach on the Riviera. Then you open the next one.</p>
+      <div class="stats-grid">
+        <div class="stat reveal"><b>5</b><span>Italian beaches</span></div>
+        <div class="stat reveal"><b>5</b><span>renovation levels each</span></div>
+        <div class="stat reveal"><b>4</b><span>summer events per beach</span></div>
+        <div class="stat reveal"><b>1</b><span>thumb is all it takes</span></div>
+      </div>
     </div>
-    <div class="card">
-      <h3>The Rush</h3>
-      <p>At noon the beach fills up. Keep everyone served while the patience bars drain, and the day closes with three stars.</p>
-    </div>
-    <div class="card">
-      <h3>A chain across Italy</h3>
-      <p>Open lidos in real towns — Rimini, Sanremo, Positano, Tropea, Porto Cervo — each with its own look, food and habits.</p>
-    </div>
-    <div class="card">
-      <h3>It grows while you watch</h3>
-      <p>Every coin you spend changes the sand in front of you: a new row, a kiosk, a helper who runs so you don't have to.</p>
-    </div>
-    <div class="card">
-      <h3>Name your own lido</h3>
-      <p>Each beach club is yours to name, and the guests leave reviews about it — some kinder than others.</p>
-    </div>
-    <div class="card">
-      <h3>No account needed</h3>
-      <p>No login, nothing to sign up for. Your progress stays on your phone.</p>
-    </div>
-  </div>
+  </section>
 
-  <h2>Want to test it?</h2>
-  <div class="note">
-    <p>Riviera Rush is not on the stores yet: it is going through closed testing on Google Play and TestFlight.
-    If you would like an invite, write to
-    <a href="mailto:rivierarush.game@gmail.com?subject=Riviera%20Rush%20testing">rivierarush.game@gmail.com</a>
-    and say whether you are on Android or iPhone.</p>
-  </div>
+  <section class="section gameplay" id="gameplay">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Gameplay</span>
+        <h2>An idle game you actually play</h2>
+        <p>You are not watching from above: you are the one on the sand, running between the counter and the sunbeds while the coins pile up.</p>
+      </div>
 
-  <footer>
-    <a href="privacy-policy.html">Privacy policy</a>
-    <a href="privacy-policy.it.html">Privacy (italiano)</a>
-    <a href="https://zipanguludev.github.io/">All Zipangulu apps</a>
-    <a href="mailto:rivierarush.game@gmail.com">Contact</a>
-    <p style="margin-top:14px">© 2026 Zipangulu</p>
-  </footer>
+      <div class="row reveal">
+        <div class="row-media"><div class="phone tilt-l"><img src="assets/img/shot-en-01.jpg" alt="Riviera Rush gameplay: a busy beach club with guests waiting for drinks and gelato" width="540" height="960" loading="lazy" decoding="async"></div></div>
+        <div>
+          <span class="step">1</span>
+          <h3>Serve with one thumb</h3>
+          <p>Walk up to the counter, stack what your guests ask for and bring it to them before their patience runs out. The more you carry, the fewer trips you make.</p>
+          <ul class="tags"><li>Sunbeds</li><li>Drinks</li><li>Gelato</li><li>Granita</li><li>Towels</li></ul>
+        </div>
+      </div>
+
+      <div class="row flip reveal">
+        <div class="row-media"><div class="phone tilt-r"><img src="assets/img/shot-en-02.jpg" alt="The midday Rush in Riviera Rush: the beach is full and the orders keep coming" width="540" height="960" loading="lazy" decoding="async"></div></div>
+        <div>
+          <span class="step">2</span>
+          <h3>Beat the Rush</h3>
+          <p>At noon the crowd arrives and everything speeds up. Chain your deliveries, keep every guest happy and watch the tips and the multiplier climb. Miss too many and the reviews will let you know.</p>
+          <ul class="tags"><li>Midday Rush</li><li>Tips</li><li>Streak multiplier</li></ul>
+        </div>
+      </div>
+
+      <div class="row reveal">
+        <div class="row-media"><div class="phone tilt-l"><img src="assets/img/shot-en-04.jpg" alt="Renovating a beach in Riviera Rush: the old beach on one side, the renovated one on the other" width="540" height="960" loading="lazy" decoding="async"></div></div>
+        <div>
+          <span class="step">3</span>
+          <h3>Build, hire, renovate</h3>
+          <p>Unlock one zone after the other: drink kiosk, gelateria, granita kiosk, pedalo pier, beach volley, restaurant terrace. Hire a barista and beach helpers who work alongside you, then renovate each beach up to level 5, with a new zone at every level.</p>
+          <ul class="tags"><li>Games corner</li><li>Dog area</li><li>Hot tub</li><li>Canopy beds</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section night" id="events">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Summer events</span>
+        <h2>Something is always happening</h2>
+        <p>A heat wave, a gust of wind, the coconut seller, a boat full of tourists. And once a beach is complete, the party starts.</p>
+      </div>
+      <div class="events-grid">
+        <div class="phone tilt-l reveal"><img src="assets/img/shot-en-05.jpg" alt="A sunset concert on the beach in Riviera Rush" width="540" height="960" loading="lazy" decoding="async"></div>
+        <div class="phone tilt-r reveal"><img src="assets/img/shot-en-06.jpg" alt="A night party on the beach in Riviera Rush" width="540" height="960" loading="lazy" decoding="async"></div>
+        <ul class="event-list reveal">
+          <li><b>Sunset concert</b><span>A stage, a band and a crowd on its feet that needs a drink.</span></li>
+          <li><b>Foam party</b><span>Midday, a foam cannon and five minutes of non-stop takings.</span></li>
+          <li><b>Cinema under the stars</b><span>A big screen on the sand on a summer night.</span></li>
+          <li><b>The local event</b><span>Every region has one of its own: meet them in the beaches below.</span></li>
+          <li><b>Your summer album</b><span>Every moment worth remembering ends up as a photo.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section beaches" id="beaches">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">A chain across Italy</span>
+        <h2>Five beaches, five Italian summers</h2>
+        <p>Open new beach clubs on the map of Italy. Every region has its own coast, its own food and its own way of having fun.</p>
+      </div>
+      <div class="beach-grid">
+        <div class="phone reveal"><img src="assets/img/map-en.jpg" alt="The map of Italy in Riviera Rush, with the regions where you can open beach clubs" width="540" height="960" loading="lazy" decoding="async"></div>
+        <div>
+          <ol class="beach-list">
+            <li class="beach reveal" style="--c:#E39410"><span class="num">1</span><div><h3>Rimini <small>Emilia-Romagna</small></h3><p class="line">Wide golden beach · gelato and pedal boats</p><p class="only"><b>Only here:</b> liscio dancing under pink lights, then fireworks.</p></div></li>
+            <li class="beach reveal" style="--c:#1E8FB0"><span class="num">2</span><div><h3>Porto Cervo <small>Sardinia</small></h3><p class="line">Coves among the granite · masks and fritto</p><p class="only"><b>Only here:</b> sailboats in the cove, fritto for the fans.</p></div></li>
+            <li class="beach reveal" style="--c:#1E8A50"><span class="num">3</span><div><h3>Sanremo <small>Liguria</small></h3><p class="line">Seafront and pebbles · focaccia and pesto</p><p class="only"><b>Only here:</b> the pesto contest, focaccia for the fans.</p></div></li>
+            <li class="beach reveal" style="--c:#D23A31"><span class="num">4</span><div><h3>Positano <small>Campania</small></h3><p class="line">Pebbles below the village · wood-fired pizza</p><p class="only"><b>Only here:</b> a serenade from a boat, lemonade for the couples.</p></div></li>
+            <li class="beach reveal" style="--c:#D9466F"><span class="num">5</span><div><h3>Tropea <small>Calabria</small></h3><p class="line">White sand below the cliff · tartufo ice cream</p><p class="only"><b>Only here:</b> a dance round the bonfire, ’nduja and then a drink.</p></div></li>
+          </ol>
+          <p class="more reveal">More of the coast is already on the map, marked “coming soon”.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reviews" id="reviews">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Reviews, stars and perks</span>
+        <h2>Your guests have opinions</h2>
+        <p>Every evening your guests review the day, and they do not hold back. These lines come straight from the game: the guests are made up, the honesty is not.</p>
+      </div>
+      <div class="review-grid">
+        <figure class="review reveal"><div class="stars" role="img" aria-label="5 stars out of 5">★★★★★</div><blockquote>“Nobody waited a second too long. Are you even human?”</blockquote><figcaption>The Rossi family</figcaption></figure>
+        <figure class="review reveal"><div class="stars" role="img" aria-label="3 stars out of 5">★★★<span class="off">★★</span></div><blockquote>“Nice place, but my husband waited twelve seconds for his sunbed. Three stars.”</blockquote><figcaption>Aunt Carla</figcaption></figure>
+        <figure class="review reveal"><div class="stars" role="img" aria-label="5 stars out of 5">★★★★★</div><blockquote>“The pizza arrived before I finished saying margherita.”</blockquote><figcaption>Carmela, from Naples</figcaption></figure>
+        <figure class="review reveal"><div class="stars" role="img" aria-label="4 stars out of 5">★★★★<span class="off">★</span></div><blockquote>“Perfect focaccia. I tasted the pesto twice, to be sure. Four stars.”</blockquote><figcaption>Anna, from Imperia</figcaption></figure>
+        <figure class="review reveal"><div class="stars" role="img" aria-label="1 star out of 5">★<span class="off">★★★★</span></div><blockquote>“I got a tan standing in the queue. That was not the plan.”</blockquote><figcaption>The guys from the bar</figcaption></figure>
+        <figure class="review reveal"><div class="stars" role="img" aria-label="5 stars out of 5">★★★★★</div><blockquote>“I came for an hour. I stayed until sunset. You do the maths.”</blockquote><figcaption>Yuki, from Japan</figcaption></figure>
+      </div>
+      <div class="perks">
+        <div class="perk reveal"><h3>Stars and perks</h3><p>Good service earns stars, and stars buy perks that follow you to every beach.</p></div>
+        <div class="perk reveal"><h3>Earn while you are away</h3><p>Your beaches keep earning while the game is closed. Come back, collect and decide what to build next.</p></div>
+        <div class="perk reveal"><h3>Short or long sessions</h3><p>A few minutes on the bus or a whole afternoon on the sofa: the beach waits for you.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section trailer" id="trailer">
+    <div class="wrap trailer-grid">
+      <div class="reveal">
+        <span class="eyebrow">Trailer</span>
+        <h2>Thirty seconds of summer</h2>
+        <p>Stack it high, hire your staff, beat the Rush and throw beach parties across Italy. Turn the sound on.</p>
+        <a class="yt" href="https://www.youtube.com/shorts/tt58i4RnX1k" rel="noopener">Watch it on YouTube →</a>
+      </div>
+      <div class="phone reveal"><video controls playsinline preload="none" poster="assets/video/trailer-en.jpg" width="720" height="1280" aria-label="Riviera Rush trailer"><source src="assets/video/trailer-en.mp4" type="video/mp4"></video></div>
+    </div>
+  </section>
+
+  <section class="section faq" id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Good questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="reveal"><summary>Is Riviera Rush free?</summary><p>Yes. Riviera Rush is free to download and play. It shows ads, and you can watch optional videos for bonuses.</p></details>
+        <details class="reveal"><summary>Is Riviera Rush on iPhone?</summary><p>Riviera Rush is coming soon to the App Store for iPhone. On Android it is already on <a href="https://play.google.com/store/apps/details?id=com.zipangulu.lidorush" rel="noopener">Google Play</a>.</p></details>
+        <details class="reveal"><summary>Do I need an account to play?</summary><p>No. There is no login and nothing to sign up for: your progress is saved on your phone.</p></details>
+        <details class="reveal"><summary>Which languages is Riviera Rush in?</summary><p>English and Italian.</p></details>
+        <details class="reveal"><summary>Which Italian beaches are in the game?</summary><p>Rimini, Porto Cervo, Sanremo, Positano and Tropea, each with its own look, food and summer event. More of the coast is already on the map, marked as coming soon.</p></details>
+        <details class="reveal"><summary>Who makes Riviera Rush?</summary><p>Zipangulu, a one-person indie studio from Italy: game design, code and release are all done by the same person. Have a look at the <a href="https://zipanguludev.github.io/">other Zipangulu apps</a>.</p></details>
+        <details class="reveal"><summary>Found a bug or have an idea?</summary><p>Write to <a href="mailto:rivierarush.game@gmail.com">rivierarush.game@gmail.com</a>. Every message is read.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" aria-label="Download Riviera Rush">
+    <div class="wrap">
+      <img class="cta-icon" src="assets/icon-512.png" alt="Riviera Rush app icon: the lifeguard on the beach" width="110" height="110" loading="lazy" decoding="async">
+      <h2>Summer is waiting.<br>So is your beach club.</h2>
+      <p>Free on Android. Coming soon to iPhone.</p>
+      <div class="cta-row">
+        <a class="badge-play" href="https://play.google.com/store/apps/details?id=com.zipangulu.lidorush" rel="noopener" aria-label="Get Riviera Rush on Google Play"><img src="assets/google-play-badge.svg" alt="Get it on Google Play" width="190" height="56" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
 </main>
 
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#top"><img src="assets/favicon-64.png" alt="" width="38" height="38" loading="lazy"><span>Riviera Rush</span></a>
+        <p>An idle beach club game set on the Italian coast.<br>Made in Italy by Zipangulu.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="privacy-policy.html">Privacy policy</a></li>
+          <li><a href="mailto:rivierarush.game@gmail.com">Contact</a></li>
+          <li><a href="https://zipanguludev.github.io/">All Zipangulu apps</a></li>
+          <li><a href="it/" hreflang="it" lang="it">Italiano</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="legal">© 2026 Zipangulu. Google Play and the Google Play logo are trademarks of Google LLC. App Store is a service mark of Apple Inc.</p>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
 </body>
 </html>

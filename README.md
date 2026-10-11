@@ -9,20 +9,46 @@ vetrina `zipanguludev.github.io`.
 
 ## Contenuti
 
-- `index.html` — landing del gioco: icona, presentazione, griglia delle
-  caratteristiche, invito ai tester. **Non ci sono ancora i badge degli store**
-  perché il gioco è in test chiuso: vanno aggiunti quando esce in test aperto.
+- `index.html` — il sito in inglese (lingua predefinita, `x-default`) e
+  `it/index.html` la stessa pagina in italiano. Le due pagine hanno la stessa
+  struttura: apertura con il video «Day 1 → Day 9», numeri, come si gioca, eventi,
+  i cinque lidi, recensioni del gioco, trailer, domande, invito a scaricare.
+  **Quando si cambia una pagina si cambia anche l'altra**, compresi i dati
+  strutturati (`application/ld+json`) e i `hreflang`.
 - `privacy-policy.html` — informativa sulla privacy in inglese. È l'URL che va
   nelle due console (Play Console → *Contenuti dell'app*, App Store Connect →
   *App Information*) e nel pulsante dentro il gioco.
 - `privacy-policy.it.html` — la stessa informativa in italiano, linkata dalla
   versione inglese e viceversa.
+- `assets/site.css`, `assets/site.js` — stile e script comuni alle due pagine.
+  Nessuno script di terze parti, nessun cookie, nessuna statistica.
+- `assets/fonts/` — Fredoka SemiBold servito dal sito (non da Google Fonts),
+  con la sua licenza OFL accanto. È lo stesso file del gioco.
 - `assets/` — icona dell'app (`icon-1024.png` è il master, viene da
-  `Art/Icon/icon_store_1024.png` nel repo del gioco), favicon e touch icon
-  derivate da quella.
+  `Art/Icon/icon_store_1024.png` nel repo del gioco; `icon-512.png` è
+  `icon_play_512.png`), favicon e touch icon derivate da quella;
+  `og-en.jpg` / `og-it.jpg` sono le anteprime per i social (1200×630).
+- `assets/img/` — gli screenshot della scheda di Google Play
+  (`docs/store/play/<lingua>/phone_0N.png` del gioco, ridotti a 540×960) e la
+  mappa dell'Italia presa dalle riprese del trailer.
+- `assets/video/` — il loop «Day 1 → Day 9» dell'apertura e il trailer, in
+  inglese e italiano, con le loro copertine. Vengono da `Recordings/promo/out/`
+  sul Mac (`beforeafter_916_<lingua>.mp4`, `trailer_916_<lingua>.mp4`),
+  ricompressi con ffmpeg (H.264; il loop 540×960 senza audio, il trailer
+  720×1280). Il trailer si scarica solo quando lo si avvia.
 - `.nojekyll` — Pages serve i file così come sono, senza build Jekyll.
 
 Niente build: si modificano gli `.html` e si fa push su `main`.
+
+**Quando esce su iPhone**: sostituire nelle due pagine il riquadro «Coming soon /
+Presto · App Store · iPhone» con il badge ufficiale di Apple e il link all'app,
+aggiungere l'App Store a `operatingSystem`, `gamePlatform`, `installUrl` e
+`sameAs` nei dati strutturati, togliere «coming soon» dalle domande e dalle
+descrizioni, e aggiungere `<meta name="apple-itunes-app" content="app-id=…">`.
+
+**Ricerca Google**: la proprietà di Search Console è `https://zipanguludev.github.io/`
+(nel repository della vetrina). La sitemap di tutto il dominio è lì, in
+`sitemap.xml`: quando si aggiunge una pagina a questo sito va aggiunta anche lì.
 
 ## Regole da non dimenticare
 
