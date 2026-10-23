@@ -33,18 +33,24 @@ vetrina `zipanguludev.github.io`.
   mappa dell'Italia presa dalle riprese del trailer.
 - `assets/video/` — il loop «Day 1 → Day 9» dell'apertura e il trailer, in
   inglese e italiano, con le loro copertine. Vengono da `Recordings/promo/out/`
-  sul Mac (`beforeafter_916_<lingua>.mp4`, `trailer_916_<lingua>.mp4`),
-  ricompressi con ffmpeg (H.264; il loop 540×960 senza audio, il trailer
-  720×1280). Il trailer si scarica solo quando lo si avvia.
+  sul Mac (`beforeafter_916_<lingua>.mp4`; il trailer dal 2026-10-23 è quello
+  della 1.1, `1.1/RivieraRush_1.1_GooglePlay_<LINGUA>_9x16.mp4`, con la
+  copertina presa dalla scheda finale a 31 s), ricompressi con ffmpeg (H.264;
+  il loop 540×960 senza audio, il trailer 720×1280, CRF 26). Il trailer si
+  scarica solo quando lo si avvia. Nei dati strutturati `embedUrl` e
+  `uploadDate` sono quelli del video su YouTube (inglese `0GiJJc5XI9s`,
+  italiano `iTGYYT-sv6I`): cambiando trailer vanno cambiati insieme.
 - `.nojekyll` — Pages serve i file così come sono, senza build Jekyll.
 
 Niente build: si modificano gli `.html` e si fa push su `main`.
 
-**Quando esce su iPhone**: sostituire nelle due pagine il riquadro «Coming soon /
-Presto · App Store · iPhone» con il badge ufficiale di Apple e il link all'app,
-aggiungere l'App Store a `operatingSystem`, `gamePlatform`, `installUrl` e
-`sameAs` nei dati strutturati, togliere «coming soon» dalle domande e dalle
-descrizioni, e aggiungere `<meta name="apple-itunes-app" content="app-id=…">`.
+**App Store** (dal 2026-10-23, quando il gioco è uscito su iPhone): badge
+ufficiale di Apple per primo nella fila (`assets/app-store-badge-en.svg` e
+`-it.svg`, gli stessi dei video del gioco, alti quanto quello di Google Play),
+link `apps.apple.com/us|it/app/riviera-rush/id6816526737`, App Store in
+`operatingSystem`, `gamePlatform` e `sameAs`, domande e descrizioni senza «coming
+soon», `<meta name="apple-itunes-app" content="app-id=6816526737">` e, in fondo,
+le righe dei marchi di Apple.
 
 **Ricerca Google**: la proprietà di Search Console è `https://zipanguludev.github.io/`
 (nel repository della vetrina). La sitemap di tutto il dominio è lì, in
